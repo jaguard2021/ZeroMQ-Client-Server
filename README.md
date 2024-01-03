@@ -15,7 +15,7 @@ This project is a simple implementation of a UDP Client-Server using the Rust pr
 
 2. **Clone the Repository**:
    ```bash
-   git clone https://github.com/username/zmq-client-server.git
+   git clone https://github.com/jaguard2021/ZeroMQ-Client-Server.git
    cd zmq-client-server
    ```
 3. Build and Run the Client:  
