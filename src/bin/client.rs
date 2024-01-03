@@ -12,7 +12,7 @@ fn main() -> std::io::Result<()> {
         let mut bytes_received = 0;
         let mut instant = Instant::now();
 
-        // Handle sinyal Ctrl+C
+        // handle Ctrl+C signal
         let running = std::sync::Arc::new(std::sync::Mutex::new(true));
         let r = running.clone();
 

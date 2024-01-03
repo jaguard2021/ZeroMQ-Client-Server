@@ -1,6 +1,5 @@
 use std::net::UdpSocket;
 use std::sync::{Arc, Mutex};
-use std::time::Instant;
 use ctrlc;
 
 fn main() -> std::io::Result<()> {
@@ -12,7 +11,7 @@ fn main() -> std::io::Result<()> {
         let mut buf = Vec::new();
         buf.resize(args[3].parse::<usize>().unwrap(), 0);
 
-        // handle sinyal Ctrl+C
+        // handle Ctrl+C signal
         let running = Arc::new(Mutex::new(true));
         let r = running.clone();
 
