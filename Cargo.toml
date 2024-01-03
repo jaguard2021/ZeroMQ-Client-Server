@@ -1,0 +1,17 @@
+[package]
+name = "ZeroMQ-Client-Server"
+version = "0.1.1"
+edition = "2023"
+description = "A simple client-server project using ZeroMQ with Ctrl+C signal handling"
+repository = "https://github.com/jaguard2021/ZeroMQ-Client-Server"
+
+
+[[bin]]
+name = "client"
+
+[[bin]]
+name = "server"
+
+[dependencies]
+zmq = "0.10.0"
+ctrlc = "3.3.0"
